@@ -2,16 +2,16 @@
 .datetime-picker {
     position: relative;
     display: inline-block;
-    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei";
-    -webkit-font-smoothing: antialiased;
-    color: #333;
+    /* font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei"; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* color: #333; */
 }
 
 .datetime-picker * {
     box-sizing: border-box;
 }
 
-.datetime-picker input {
+/* .datetime-picker input {
     width: 100%;
     padding: 5px 10px;
     height: 30px;
@@ -19,7 +19,7 @@
     border: 1px solid #ccc;
     font-size: 13px;
 }
-
+ */
 .datetime-picker .picker-wrap {
     position: absolute;
     z-index: 1000;
@@ -109,9 +109,10 @@
 </style>
 
 <template>
-    <div class="datetime-picker" :style="{ width: width }">
+    <div class="datetime-picker">
         <input
             type="text"
+            class="base-input"
             :style="styleObj"
             :readonly="readonly"
             :value="value"
