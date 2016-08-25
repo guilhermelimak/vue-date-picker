@@ -7,6 +7,10 @@
     /* color: #333; */
 }
 
+.datetime-picker input {
+  background-color: white !important;
+}
+
 .datetime-picker * {
     box-sizing: border-box;
 }
@@ -27,7 +31,7 @@
     height: 280px;
     margin-top: 2px;
     background-color: #fff;
-    box-shadow: 0 0 6px #ccc;
+    /* box-shadow: 0 0 6px #ccc; */
 }
 
 .datetime-picker table {
@@ -110,16 +114,14 @@
 
 <template>
     <div class="datetime-picker">
-        <div class="input-group">
+        <div class="input-group" @click="show = !show">
           <input
               type="text"
               class="base-input form-control"
               :style="styleObj"
               :readonly="readonly"
-              :value="value"
-              @click="show = !show">
+              :value="value">
           <span class="input-group-addon {{ buttonIcon }}" ></span>
-
         </div>
 
         <div class="picker-wrap" v-show="show">
