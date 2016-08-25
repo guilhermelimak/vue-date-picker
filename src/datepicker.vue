@@ -120,12 +120,12 @@
               class="base-input form-control"
               :style="styleObj"
               :readonly="readonly"
-               @click="show = !show"
+              @click="show = !show"
               :value="value">
-          <span
+          <button
             @click="show = !show"
             class="input-group-addon {{ buttonIcon }}" >
-          </span>
+          </button>
         </div>
 
         <div class="picker-wrap" v-show="show">
