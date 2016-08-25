@@ -110,13 +110,18 @@
 
 <template>
     <div class="datetime-picker">
-        <input
-            type="text"
-            class="base-input"
-            :style="styleObj"
-            :readonly="readonly"
-            :value="value"
-            @click="show = !show">
+        <div class="input-group">
+          <input
+              type="text"
+              class="base-input form-control"
+              :style="styleObj"
+              :readonly="readonly"
+              :value="value"
+              @click="show = !show">
+          <span class="input-group-addon {{ buttonIcon }}" ></span>
+
+        </div>
+
         <div class="picker-wrap" v-show="show">
             <table class="date-picker">
                 <thead>
@@ -153,6 +158,7 @@
     export default {
         props: {
             width: { type: String, default: '238px' },
+            buttonIcon: { type: String, default: 'cal' },
             readonly: { type: Boolean, default: false },
             value: { type: String, default: '' },
             format: { type: String, default: 'YYYY-MM-DD' }
