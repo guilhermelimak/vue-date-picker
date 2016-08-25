@@ -114,14 +114,18 @@
 
 <template>
     <div class="datetime-picker">
-        <div class="input-group" @click="show = !show">
+        <div class="input-group">
           <input
               type="text"
               class="base-input form-control"
               :style="styleObj"
               :readonly="readonly"
+               @click="show = !show"
               :value="value">
-          <span class="input-group-addon {{ buttonIcon }}" ></span>
+          <span
+            @click="show = !show"
+            class="input-group-addon {{ buttonIcon }}" >
+          </span>
         </div>
 
         <div class="picker-wrap" v-show="show">
