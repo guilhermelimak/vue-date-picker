@@ -72,18 +72,18 @@
 
 .datetime-picker td.date-active {
     background-color: #ececec;
-    color: #3bb4f2;
+    color: #024DA1;
 }
 
 .datetime-picker .date-head {
-    background-color: #3bb4f2;
+    background-color: #024DA1;
     text-align: center;
     color: #fff;
     font-size: 14px;
 }
 
 .datetime-picker .date-days {
-    color: #3bb4f2;
+    color: #024DA1;
     font-size: 14px;
 }
 
@@ -109,7 +109,8 @@
 
 .datetime-picker .btn-prev:hover,
 .datetime-picker .btn-next:hover {
-    background: rgba(16, 160, 234, 0.5);
+    /* background: rgba(16, 160, 234, 0.5); */
+    background: #024DA1;
 }
 </style>
 
