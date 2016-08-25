@@ -7,8 +7,9 @@
     /* color: #333; */
 }
 
-.datetime-picker input {
+.datetime-picker .calendar-button {
   background-color: white !important;
+  text-decoration: none;
 }
 
 .datetime-picker * {
@@ -122,10 +123,10 @@
               :readonly="readonly"
               @click="show = !show"
               :value="value">
-          <button
+          <a
             @click="show = !show"
-            class="input-group-addon {{ buttonIcon }}" >
-          </button>
+            class="input-group-addon {{ buttonIcon }} calendar-button" >
+          </a>
         </div>
 
         <div class="picker-wrap" v-show="show">
