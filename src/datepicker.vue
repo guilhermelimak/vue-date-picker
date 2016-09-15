@@ -5,8 +5,9 @@
 }
 
 .datetime-picker .calendar-button {
-  background-color: white !important;
-  text-decoration: none;
+    color: white !important;
+    background-color: #024DA1 !important;
+    text-decoration: none;
 }
 
 .datetime-picker * {
@@ -20,7 +21,6 @@
     height: 280px;
     margin-top: 2px;
     background-color: #fff;
-    /* box-shadow: 0 0 6px #ccc; */
 }
 
 .datetime-picker table {
@@ -97,7 +97,6 @@
 
 .datetime-picker .btn-prev:hover,
 .datetime-picker .btn-next:hover {
-    /* background: rgba(16, 160, 234, 0.5); */
     background: #024DA1;
 }
 </style>
